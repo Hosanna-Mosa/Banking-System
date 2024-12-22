@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="putForm" action=<%= `/bank/${ph}/debit?_method=PUT` %> method="POST">
+        <input type="hidden" name="data" value="exampleData">
+    </form>
+    <script>
+        // Auto-submit the form on page load
+        document.getElementById('putForm').submit();
+    </script>
+</body>
+</html>
